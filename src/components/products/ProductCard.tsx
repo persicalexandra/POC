@@ -63,21 +63,20 @@ export default function ProductCard({ product }: Props) {
 					</button>
 				</div>
 				<div className='mt-4 flex items-center justify-between'>
-					
-					<button
-							type='button'
-							className='ml-2 bg-neutral-500 text-white font-semibold py-2 px-4 rounded hover:bg-neutral-700'
-							onClick={() => addItem(product)}
-						>
-							+
-						</button>
-						<span> {cart?.length}</span>
 						<button
 							type='button'
 							className='ml-2 bg-neutral-500 text-white font-semibold py-2 px-4 rounded hover:bg-neutral-700'
 							onClick={() => removeItem(product)}
 						>
 							-
+						</button>
+						<span> {cart?.length}</span>
+						<button
+							type='button'
+							className='ml-2 bg-neutral-500 text-white font-semibold py-2 px-4 rounded hover:bg-neutral-700'
+							onClick={() => addItem(product)}
+						>
+							+
 						</button>
 				</div>
 			</div>
