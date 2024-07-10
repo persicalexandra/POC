@@ -1,0 +1,14 @@
+query getSearchProducts($value: String) {
+	searchProduct(value: $value) {
+    id
+    title
+    description
+    category
+    price
+    discountPercentage
+    rating
+    stock
+    tags
+    thumbnail
+	}
+}

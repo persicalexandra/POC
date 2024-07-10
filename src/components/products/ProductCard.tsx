@@ -43,7 +43,7 @@ export default function ProductCard({ product }: Props) {
 	return (
 		<div className='bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl flex flex-col justify-between p-4 '>
 			<Image
-				src={product.images[0]}
+				src={product.thumbnail}
 				alt={product.title}
 				width={100}
 				height={100}
