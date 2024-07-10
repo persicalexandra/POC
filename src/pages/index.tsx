@@ -1,6 +1,6 @@
 import { useEffect, useState, createContext, useContext, useRef } from "react"
-import GET_PRODUCTS from '@/graphql/queries/getProducts.gql';
-import SEARCH_PRODUCTS from '@/graphql/queries/searchProducts.gql'
+import GET_PRODUCTS from '@/graphql/queries/getProducts';
+import SEARCH_PRODUCTS from '@/graphql/queries/searchProducts'
 import Header from "@/components/ui/Header"
 import Drawer from "@/components/ui/Drawer"
 import Cart from "@/components/minicart/Cart"
@@ -27,7 +27,6 @@ export default function Home() {
       setProductList(data.searchProduct)
     },
 		onError(error) {
-			debugger;
 				console.log(error)
 		},
   })

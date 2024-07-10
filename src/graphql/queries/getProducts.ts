@@ -1,4 +1,6 @@
+import { gql } from '@apollo/client'
 
+const GET_PRODUCTS = gql`
 query getProducts {
 	products {
     id
@@ -12,5 +14,7 @@ query getProducts {
     tags
     thumbnail
 	}
-}
+}`;
+
+export default GET_PRODUCTS;
 
